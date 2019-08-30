@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8">
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<title>Cadastrar Produto</title>
+<head>
+<body>
+	<div id="interface">
+		<header id="cabecalho">
+			<img id="icone" src="img/logo.png" />
+			<hgroup>
+				<h1>Santos Store</h1>
+				<h2>Desde de 2019</h2>
+			</hgroup>
+
+			<nav id="menu">
+				<ul>
+					<li><a href="http://localhost:9091">Home</a></li>
+					<li><a href="cadastro_produto">Cadastrar Produto</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section id="corpo-full">
+			<article id="principal">
+				<header id="cabecalho-a">
+					<hgroup>
+						<h3>Loja > Cadastro Produto</h3>
+						<h1>Cadastro de Produto</h1>
+						<h3 class="direita">Atualizado em 26/08/2019</h3>
+					</hgroup>
+				</header>
+				<form action="/save" method="post">
+					<fieldset class="legenda" id="cadastro">
+						<legend>Dados do Produto</legend>
+						<div class="col-md">
+							Nome <br> <input type="text" name="nome" id="cNome"
+								size="60" maxlength="20" placeholder="Nome do Produto" required />
+						</div>
+						<div class="col-md">
+							Descrição <br> <input type="text" name="descricao"
+								id="cDescricao" size="60" maxlength="60"
+								placeholder="Descrição do Produto" required />
+						</div>
+						<div class="col-md">
+							Preço (R$) <br> <input type="text" name="preco" id="cPreco"
+								size="60" maxlength="20" placeholder="Ex: 1.99" required />
+						</div>
+						<div class="col-md">
+							Observações <br> <input type="text" name="obs" id="cObs"
+								size="60" maxlength="40" placeholder="Informações adicionais.." required />
+						</div>
+					</fieldset>
+					<div class="botao">
+						<p><input type="submit" value="Cadastrar"> <input
+								type="reset" value="Limpar"></p>
+					</div>
+				</form>
+			</article>
+		</section>
+		<footer id="rodape"> Copyright &copy; 2019 - by Fernanda
+			Santos </footer>
+	</div>
+</body>
+</html>
